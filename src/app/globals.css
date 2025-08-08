@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/*
+ * Global CSS variables and base styling
+ *
+ * The BarelyLegalCotton brand leans heavily into a dark, neon–soaked aesthetic.
+ * Define a baseline dark background and bright accent colours that can be
+ * referenced throughout the application via CSS variables. These variables
+ * are consumed by Tailwind via the inline theme configuration and allow
+ * components to inherit the appropriate palette without repetitive styling.
+ */
+:root {
+  /* foundational colours */
+  --background: #0b0d11;        /* rich, almost‑black background */
+  --foreground: #f3f4f6;        /* off‑white text for high contrast */
+  --accent: #00ffc6;            /* primary neon accent – cyan */
+  --accent-secondary: #ff00a0;  /* secondary neon accent – magenta */
+
+  /* assign variables for the theme plugin */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  @apply text-base leading-relaxed antialiased;
+}
+
+/*
+ * Typography utility classes
+ *
+ * Tailwind doesn’t automatically create classes tied to custom CSS variables.
+ * Define shorthand classes that map to our imported fonts. Use these in
+ * components (e.g. className="font-heading") to apply the appropriate
+ * typeface without repeating long declarations.
+ */
+.font-heading {
+  font-family: var(--font-heading), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Utility classes for section backgrounds */
+.bg-hero {
+  /* fallback colour behind the hero image */
+  background-color: #0f1120;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-full font-semibold text-sm transition-colors;
+  background-color: var(--accent);
+  color: #0b0d11;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-secondary);
+  color: #0b0d11;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-full font-semibold text-sm border border-current transition-colors;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent);
+  color: #0b0d11;
+}
