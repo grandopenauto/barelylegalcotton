@@ -21,7 +21,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BarelyLegalCotton | Not Your Grandma’s Cotton Tee",
+  title: "BarelyLegalCotton | Fashion Too Good To Be Legal",
   description:
     "BarelyLegalCotton delivers rebellious streetwear and curated gear with a crypto aesthetic. Shop drops, earn rewards and explore our picks.",
 };
