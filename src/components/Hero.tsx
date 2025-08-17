@@ -22,10 +22,10 @@ export default function Hero() {
       />
       <div className="relative z-10 max-w-4xl mx-auto text-center px-6 md:px-8">
         <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-6 drop-shadow-lg">
-          Not Your Grandma’s Cotton Tee
+          Fashion Too Good To Be Legal
         </h1>
         <p className="max-w-2xl mx-auto text-lg sm:text-xl md:text-2xl text-gray-300 mb-10">
-          Bold, rebellious and dripping in neon – welcome to the underground.
+          Bold, rebellious and dripping in awesome sauce – welcome to the underground.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
